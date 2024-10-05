@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,44 +7,44 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <button onclick="switchLanguage('en')">English</button>
+        <button onclick="switchLanguage('ar')">العربية</button>
+    </div>
+
     <header>
-        <nav class="navbar">
-            <img src="yaqeen-logo.png" alt="Yaqeen Dates Logo" class="logo">
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <img src="logo.png" alt="Yaqeen Dates Logo">
+        <nav>
+            <a href="#about">About</a>
+            <a href="#products">Products</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
     <section id="about">
-        <h1>About Us</h1>
-        <p>At Yaqeen Dates, we offer the finest quality dates sourced directly from our farms, ensuring freshness and flavor in every bite.</p>
+        <h1 data-en="About Us" data-ar="معلومات عنا">About Us</h1>
+        <p data-en="At Yaqeen Dates, we offer the finest quality dates sourced directly from our farms." 
+           data-ar="في يقين للتمور، نقدم أجود أنواع التمور المستخرجة مباشرة من مزارعنا.">At Yaqeen Dates, we offer the finest quality dates sourced directly from our farms.</p>
     </section>
 
-    <section id="products" class="products">
-        <h2>Our Products</h2>
+    <section id="products">
+        <h2 data-en="Our Products" data-ar="منتجاتنا">Our Products</h2>
         <div class="product-card">
-            <h3>Fresh Dates</h3>
-            <p>Our fresh dates are handpicked and packed to preserve their natural sweetness and quality. Perfect for snacking or adding to your favorite dishes.</p>
-            <button>Buy Now</button>
+            <img src="date1.jpg" alt="Fresh Dates">
+            <h3 data-en="Fresh Dates" data-ar="تمور طازجة">Fresh Dates</h3>
+            <p data-en="Handpicked and packed to preserve natural sweetness." 
+               data-ar="مختارة يدويًا ومعبأة للحفاظ على الحلاوة الطبيعية.">Handpicked and packed to preserve natural sweetness.</p>
         </div>
-        <div class="product-card">
-            <h3>Packaged Dates</h3>
-            <p>Conveniently packaged for your enjoyment, our dates are a healthy and delicious treat you can take anywhere.</p>
-            <button>Buy Now</button>
-        </div>
+        <!-- Add 4 more products here with similar structure -->
     </section>
 
-    <section id="contact" class="contact-section">
-        <h2>Contact Us</h2>
-        <form class="contact-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" placeholder="Enter your name">
-            <label for="email">Email:</label>
-            <input type="email" id="email" placeholder="Enter your email">
-            <button type="submit">Submit</button>
+    <section id="contact">
+        <h2 data-en="Contact Us" data-ar="اتصل بنا">Contact Us</h2>
+        <form>
+            <input type="text" name="name" placeholder="Name" data-en="Name" data-ar="الاسم">
+            <input type="email" name="email" placeholder="Email" data-en="Email" data-ar="البريد الإلكتروني">
+            <button type="submit" data-en="Submit" data-ar="إرسال">Submit</button>
         </form>
     </section>
 
