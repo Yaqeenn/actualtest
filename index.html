@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,11 +9,9 @@
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="logo.png" alt="Yaqeen Dates Logo"> <!-- Replace with your logo file name -->
-        </div>
-        <nav>
-            <ul>
+        <nav class="navbar">
+            <img src="yaqeen-logo.png" alt="Yaqeen Dates Logo" class="logo">
+            <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#products">Products</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -20,40 +19,38 @@
         </nav>
     </header>
 
-    <main>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>At Yaqeen Dates, we offer the finest quality dates sourced directly from our farms, ensuring freshness and flavor in every bite.</p>
-        </section>
+    <section id="about">
+        <h1>About Us</h1>
+        <p>At Yaqeen Dates, we offer the finest quality dates sourced directly from our farms, ensuring freshness and flavor in every bite.</p>
+    </section>
 
-        <section id="products">
-            <h2>Our Products</h2>
-            <div class="product">
-                <h3>Fresh Dates</h3>
-                <p>Our fresh dates are handpicked and packed to preserve their natural sweetness and quality. Perfect for snacking or adding to your favorite dishes.</p>
-            </div>
-            <div class="product">
-                <h3>Packaged Dates</h3>
-                <p>Conveniently packaged for your enjoyment, our dates are a healthy and delicious treat you can take anywhere.</p>
-            </div>
-        </section>
+    <section id="products" class="products">
+        <h2>Our Products</h2>
+        <div class="product-card">
+            <h3>Fresh Dates</h3>
+            <p>Our fresh dates are handpicked and packed to preserve their natural sweetness and quality. Perfect for snacking or adding to your favorite dishes.</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="product-card">
+            <h3>Packaged Dates</h3>
+            <p>Conveniently packaged for your enjoyment, our dates are a healthy and delicious treat you can take anywhere.</p>
+            <button>Buy Now</button>
+        </div>
+    </section>
 
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <button type="submit">Submit</button>
-            </form>
-        </section>
-    </main>
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email">
+            <button type="submit">Submit</button>
+        </form>
+    </section>
 
     <footer>
-        <p>&copy; 2024 Yaqeen Dates. All rights reserved.</p>
+        <p>© 2024 Yaqeen Dates. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>

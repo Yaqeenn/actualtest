@@ -1,63 +1,115 @@
-body {
-    font-family: Arial, sans-serif;
+
+* {
     margin: 0;
     padding: 0;
-    background-color: #f8f4e3; /* Light background */
-    color: #4b3c2a; /* Dark text color */
+    box-sizing: border-box;
 }
 
-header {
-    background-color: #a65e2c; /* Header background color */
-    color: white;
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #faf3e0;
+    color: #333;
+}
+
+.navbar {
+    background-color: #8b5e3c;
     padding: 20px;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.logo img {
-    width: 100px; /* Adjust as needed */
+.logo {
+    max-width: 150px;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
+.nav-links {
+    list-style: none;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+.nav-links li {
+    display: inline-block;
+    margin-left: 20px;
 }
 
-nav a {
-    color: white;
+.nav-links li a {
     text-decoration: none;
-}
-
-main {
-    padding: 20px;
-}
-
-section {
-    margin-bottom: 30px;
-}
-
-.product {
-    border: 1px solid #ccc;
+    color: white;
+    font-weight: bold;
     padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
     transition: background-color 0.3s;
 }
 
-.product:hover {
-    background-color: #ffe5b4; /* Highlight effect on hover */
+.nav-links li a:hover {
+    background-color: #6b4228;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section {
+    padding: 50px 0;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.product-card button {
+    background-color: #8b5e3c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.product-card button:hover {
+    background-color: #6b4228;
+}
+
+.contact-section {
+    text-align: center;
+    background-color: #f4e4d6;
+    padding: 50px 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact-form label {
+    margin-bottom: 10px;
+}
+
+.contact-form input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
 footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #a65e2c; /* Footer background color */
+    background-color: #8b5e3c;
     color: white;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    text-align: center;
+    padding: 20px;
 }
