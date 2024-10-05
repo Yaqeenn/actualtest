@@ -3,9 +3,9 @@ function switchLanguage(lang) {
 
     elements.forEach(element => {
         if (lang === 'en') {
-            element.innerHTML = element.getAttribute('data-en');
-        } else {
-            element.innerHTML = element.getAttribute('data-ar');
+            element.textContent = element.getAttribute('data-en');
+        } else if (lang === 'ar') {
+            element.textContent = element.getAttribute('data-ar');
         }
     });
 }
